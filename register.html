@@ -35,35 +35,50 @@
                     </div>
                     <div>
                         <label class="form">Fullname<span style="color: red;">*</span></label>
-                        <input class="label" placeholder="Masukkan nama" required="required">
+                        <input class="label" id="nama" placeholder="Masukkan nama" required="required">
                     </div>
                     <div>
                         <label class="form">Email<span style="color: red;">*</span></label>
-                        <input class="label" placeholder="Masukkan email" required="required">
+                        <input class="label" id="email" placeholder="Masukkan email" required="required">
                     </div>
                     <div>
                         <label class="form">Nomor Telphone<span style="color: red;">*</span></label>
-                        <input class="label" placeholder="Masukkan nomor telphone" required="required">
+                        <input class="label" id="telp" placeholder="Masukkan nomor telphone" required="required">
                     </div>
                     <div>
                         <label class="form">Lowongan<span style="color: red;">*</span></label>
                         <select class="picklist" id="picklist" name="picklist">
                           <option value="Pilih Lowongan">- Pilih Lowongan -</option>
+                          <option value="Pilih Lowongan">Lowongan</option>
                         </select>
                     </div>
                     <div>
                         <label class="form">Posisi<span style="color: red;">*</span></label>
-                        <select class="picklist" id="picklist" name="picklist">
+                        <select class="picklist" id="picklist2" name="picklist">
                           <option value="Posisi">Posisi Jabatan</option>
                           <option value="Posisi2">Posisi Jibitin</option>
                           <option value="Posisi2">Posusu Jibitin</option>
                         </select>
                     </div>
                     <div>
-                        <button class="button">Click me</button>
+                        <button class="button" onclick="login()">Submit</button>
                     </div>
                 </div>
             </div>
+        <script>
+            function login() {
+              var nama = document.getElementById("nama").value;
+              var email = document.getElementById("email").value;
+              var telp = document.getElementById("telp").value;
+              var picklist = document.getElementById("picklist").value;
+              var picklist2 = document.getElementById("picklist2").value;
+              if (nama != "" && email != "" && telp != "" && picklist != "" && picklist2 != "") {
+                alert("Login successful!");
+              } else {
+                alert("Data Tidak Boleh Kosong");
+              }
+            }
+          </script>
         </div>
       </div>
 </body>
