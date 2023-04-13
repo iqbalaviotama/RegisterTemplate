@@ -5,8 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="asset/style/navbar.css">
+    <link rel="stylesheet" href="asset/style/split.css">
+    <link rel="stylesheet" href="asset/style/register.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins">
+	<style>
+		body {
+			font-family: 'Poppins';
+		}
+	</style>
 </head>
-<body>
-    
+<body style="margin: 0%;">
+    <nav>
+            <a href="https://neuronworks.co.id">                            
+                <img src="asset/picture/neuron_logo.png" alt="PT. Neuronworks Indonesia" style="width: 8rem;">
+            </a>            
+    </nav>
+    <div class="split-screen">
+        <div class="background">
+            <img src="asset/picture/background.svg" alt="">
+        </div>
+        <div class="login">
+            <div class="square-float">
+                <div>
+                    <div>
+                        <img src="asset/picture/logomark-sign.png" alt="" class="logo"> 
+                        <h3 class="font">Form Rekrutasi</h3> 
+                        <p class="font2">Isi data di bawah sesuai dengan identitas diri anda dan lowongan yang akan anda pilih</p>                           
+                    </div>
+                    <div>
+                        <label class="form">Fullname<span style="color: red;">*</span></label>
+                        <input class="label" placeholder="Masukkan nama" required="required">
+                    </div>
+                    <div>
+                        <label class="form">Email<span style="color: red;">*</span></label>
+                        <input class="label" placeholder="Masukkan email" required="required">
+                    </div>
+                    <div>
+                        <label class="form">Nomor Telphone<span style="color: red;">*</span></label>
+                        <input class="label" placeholder="Masukkan nomor telphone" required="required">
+                    </div>
+                    <div>
+                        <label class="form">Lowongan<span style="color: red;">*</span></label>
+                        <select class="picklist" id="picklist" name="picklist">
+                          <option value="Pilih Lowongan">- Pilih Lowongan -</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="form">Posisi<span style="color: red;">*</span></label>
+                        <select class="picklist" id="picklist" name="picklist">
+                          <option value="Posisi">Posisi Jabatan</option>
+                          <option value="Posisi2">Posisi Jibitin</option>
+                          <option value="Posisi2">Posusu Jibitin</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button class="button">Click me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
 </body>
 </html>
